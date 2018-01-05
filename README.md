@@ -6,4 +6,5 @@ The input image  it´s recomendable to be a .png and a 1024x1024 originial size 
 
 We are not responsible for possible problems in your system, you accept the program as it is.
 
+Official web page: http://iconsizesgenerator.tk
 Alpha Fase 0.7.0
