@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="pane" fx:id="myPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDropped="#mouseDragDropped" onDragEntered="#setOnDragEntered" onDragExited="#setOnDragExited" onDragOver="#mouseDragOver" onKeyPressed="#handleKeyCombination" onMouseDragExited="#setOnDragExited" onMouseDragged="#handleMouseDraggedOnPane" onMousePressed="#handleMousePressedOnPane" prefHeight="433.0" prefWidth="461.0" styleClass="mainFxmlClass" stylesheets="@previewStyle.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UIPackage.PreviewController">
+   <children>
+      <Label fx:id="imageHere" alignment="CENTER" layoutX="157.0" layoutY="157.0" prefHeight="119.0" prefWidth="147.0" text="Drop your image here" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button id="closeButton" fx:id="closeButton" layoutY="1.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" onMouseClicked="#setOnClicked" onMouseExited="#setOnMouseExited" onMouseMoved="#setOnMouseEntered" onMousePressed="#setOnClickedPressedClose" onMouseReleased="#setOnClickedRelease" prefHeight="34.0" prefWidth="35.0" styleClass="mainFxmlClass" />
+      <Label layoutX="167.0" layoutY="10.0" text="Icon Sizes Generator" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="367.0" layoutY="411.0" text="Version 0.7.1" textFill="WHITE" />
+      <Label id="LabelSuperiorLeft" fx:id="sL" layoutX="25.0" layoutY="66.0" prefHeight="17.0" prefWidth="11.0" styleClass="mainFxmlClass" />
+      <Label id="LabelInferiorLeft" fx:id="iL" layoutX="20.0" layoutY="361.0" prefHeight="17.0" prefWidth="11.0" styleClass="mainFxmlClass" />
+      <Label fx:id="sR" layoutX="396.0" layoutY="66.0" prefHeight="17.0" prefWidth="11.0" />
+      <Label fx:id="iR" layoutX="402.0" layoutY="361.0" prefHeight="17.0" prefWidth="11.0" />
+      <Button fx:id="minimizeButton" layoutX="56.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleMinimizeButtonAction" onMouseEntered="#setOnMouseEnteredMinimize" onMouseExited="#setOnMouseExitedMinimize" onMouseMoved="#setOnMouseEnteredMinimize" onMousePressed="#setOnClickedPressedMinimized" onMouseReleased="#setOnClickedReleaseMinimized" />
+      <Button id="optionsButton" fx:id="optionsButton" layoutX="404.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleClickonOptionsButton" onMouseExited="#setOnMouseExitedPreferrences" onMouseMoved="#setOnMouseEnteredPreferrences" onMousePressed="#setOnClickedPressedPreferrences" onMouseReleased="#setOnClickedReleasePreferrences" styleClass="mainFxmlClass" />
+      <Button fx:id="fileChooserButton" layoutX="185.0" layoutY="398.0" mnemonicParsing="false" onAction="#handleClickedFileChooserButton" prefHeight="27.0" prefWidth="92.0" style="-fx-background-color: Transparent;" styleClass="mainFxmlClass" text="Open a file" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

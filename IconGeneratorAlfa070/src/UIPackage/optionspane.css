@@ -1,0 +1,40 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #FC3D44;
+    -fx-background-radius: 6 6 6 6;
+    -fx-alignment:center;
+    -fx-background-size: 800 900;
+    -fx-border-width: 5;
+    -fx-padding: 10;
+    -fx-border-radius: 0 0 18 18;
+}
+#closeButton{
+    -fx-background-color:  transparent;
+    -fx-effect: dropshadow( gaussian , black , 6 , 0.0 , 1 , 4 );
+}
+#minimizeButton{
+    -fx-background-color:  transparent;
+    -fx-effect: dropshadow( gaussian , black , 6 , 0.0 , 1 , 4 );
+}
+#exportButton{
+    -fx-background-color:  transparent;
+    -fx-effect: dropshadow( gaussian , black , 6 , 0.0 , 1 , 4 );
+}
+#toggleButton{
+    -fx-background-color:  transparent;
+    -fx-effect: dropshadow( gaussian , black , 6 , 0.0 , 1 , 4 );
+}
+#textField{
+    -fx-effect: dropshadow( gaussian , black , 6 , 0.0 , 1 , 4 );
+}
+#tripleButton{
+    -fx-background-color:  transparent;
+    -fx-effect: dropshadow( gaussian , black , 6 , 0.0 , 1 , 4 );
+}
+#doneButton{
+    -fx-background-color:  transparent;
+    -fx-effect: dropshadow( gaussian , black , 6 , 0.0 , 1 , 4 );
+}
