@@ -179,7 +179,7 @@ public class PreviewController implements Initializable {
         if (e.getDragboard().hasFiles()) {
             e.acceptTransferModes(TransferMode.COPY);
             Dragboard db = e.getDragboard();
-            if (db.getFiles().get(0).getName().endsWith(".png") || db.getFiles().get(0).getName().endsWith(".jpg")) {
+            if (db.getFiles().get(0).getName().endsWith(".png") || db.getFiles().get(0).getName().endsWith(".jpg")|| db.getFiles().get(0).getName().endsWith(".JPG")) {
                 DropShadow dS = new DropShadow(BlurType.GAUSSIAN, Color.WHITE, 50, 0, 0, 10);
                 sL.setEffect(dS);
                 iL.setEffect(dS);
