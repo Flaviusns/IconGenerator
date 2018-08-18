@@ -1,0 +1,69 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    #pane{
+        -fx-background-color: #FC3D44;
+        -fx-background-radius: 6 6 6 6;
+        -fx-alignment:center;
+        -fx-border-radius: 0 0 18 18;
+    }
+    #TilePane{
+        -fx-background-color: #484848;
+        -fx-effect: dropshadow( gaussian , black , 6 , 0.0 , 1 , 4 );
+    }
+    #AnchorPane{
+        -fx-background-color: #FC3D44;
+        -fx-background-radius: 6 6 6 6;
+        -fx-alignment:center;
+        -fx-border-radius: 0 0 18 18;
+    }
+    .nameText{
+        -fx-background-color: #484848;
+        -fx-background-opacity: 0.75;
+        -fx-background-radius: 6 6 6 6;
+        -fx-border-radius: 18 18 18 18;
+    }
+    .imageview{
+        -fx-border-color: black;
+        -fx-padding: 10px;
+    }
+    .imagePane{
+        -fx-effect: dropshadow( gaussian , black , 6 , 0.0 , 1 , 4 );
+    }
+    .scrollpane{
+        -fx-background-radius: 6 6 6 6;
+    }
+    .scrollpane :vertical .thumb{
+        -fx-background-color: white;
+        -fx-background-radius: 18 18 18 18; 
+    }
+    .scrollpane :vertical .track{
+        -fx-background-color: #484848;
+        -fx-border-color:#484848;
+        -fx-background-insets: 0, 0, 0;
+    }
+    .scrollpane :vertical .increment-button{
+        -fx-background-color: #484848;
+        -fx-background-insets: 0, 0, 0;
+        -fx-border-color:#484848;
+    }
+    .scrollpane :vertical .decrement-button{
+        -fx-background-color: #484848;
+        -fx-background-insets: 0, 0, 0;
+        -fx-border-color:#484848;
+    }
+    #closeButton{
+        -fx-background-color:  transparent;
+        -fx-effect: dropshadow( gaussian , black , 6 , 0.0 , 1 , 4 );
+    }
+    .exportButton{
+        -fx-background-color:  transparent;
+        -fx-effect: dropshadow( gaussian , black , 6 , 0.0 , 1 , 4 );
+    }
+    .newImageButton{
+       -fx-background-color:  transparent;
+       -fx-effect: dropshadow( gaussian , black , 6 , 0.0 , 1 , 4 ); 
+    }
+}

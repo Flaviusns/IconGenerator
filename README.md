@@ -8,4 +8,11 @@ We are not responsible for possible problems in your system, you accept the prog
 
 Java it´s required.
 
-Beta Fase 0.7.0
+Beta Fase 0.8.0
+
+New features:
+
+Add "New Image" button that allows you to create another iconset with other image without 
+clossing manually the app. This button will delete your current work if it wasn´t exported.
+
+
