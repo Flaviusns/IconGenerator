@@ -6,7 +6,7 @@ The input image  it´s recomendable to be a .png and a 1024x1024 originial size 
 
 We are not responsible for possible problems in your system, you accept the program as it is.
 
-Java it´s required.
+Java it´s required. Installers no more supported, they gave too many problems.
 
 Beta Fase 0.8.0
 
