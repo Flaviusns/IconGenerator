@@ -8,7 +8,7 @@ We are not responsible for possible problems in your system, you accept the prog
 
 Java it´s required. Installers no more supported, they gave too many problems.
 
-Beta Fase 0.8.0
+Beta Phase 0.8.0
 
 New features:
 
