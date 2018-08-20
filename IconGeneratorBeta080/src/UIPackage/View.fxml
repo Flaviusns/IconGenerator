@@ -48,7 +48,7 @@
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="902.0" layoutY="471.0" text="Version 0.8.0" textFill="WHITE">
+      <Label layoutX="902.0" layoutY="471.0" text="Version 0.8.1" textFill="WHITE">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>

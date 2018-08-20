@@ -21,7 +21,7 @@
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font></Label>
-      <Label layoutX="367.0" layoutY="411.0" text="Version 0.8.0" textFill="WHITE" />
+      <Label layoutX="367.0" layoutY="411.0" text="Version 0.8.1" textFill="WHITE" />
       <Label id="LabelSuperiorLeft" fx:id="sL" layoutX="25.0" layoutY="66.0" prefHeight="17.0" prefWidth="11.0" styleClass="mainFxmlClass" />
       <Label id="LabelInferiorLeft" fx:id="iL" layoutX="20.0" layoutY="361.0" prefHeight="17.0" prefWidth="11.0" styleClass="mainFxmlClass" />
       <Label fx:id="sR" layoutX="396.0" layoutY="66.0" prefHeight="17.0" prefWidth="11.0" />

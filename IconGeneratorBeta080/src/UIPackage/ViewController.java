@@ -16,6 +16,7 @@
  */
 package UIPackage;
 
+import com.sun.javafx.PlatformUtil;
 import icongenerator.Creator;
 import icongenerator.ImageContainer;
 import icongenerator.ImageRescaling;
@@ -326,13 +327,23 @@ public class ViewController implements Initializable {
     @FXML
     private void newImageClicked(ActionEvent mo) {
         try {
-            File f = new File(System.getProperty("java.class.path"));
-            File dir = f.getAbsoluteFile().getParentFile();
-            String path = dir.toString();
-            System.out.println(path);
-            System.out.println("java -jar ∫" + path + "/IconGeneratorAlfa070.jar");
-            Runtime.getRuntime().exec("java -jar " + path + "/IconGeneratorAlfa070.jar");
-            System.exit(0);
+            if (PlatformUtil.isWindows()) {
+                File f = new File(System.getProperty("java.class.path"));
+                File dir = f.getAbsoluteFile().getParentFile();
+                String path = dir.toString();
+                System.out.println(path);
+                String command = "java -jar " + path + "/IconGeneratorBeta081.jar";
+                command = command.replace("/", "\\");
+                System.out.println(command);
+                Runtime.getRuntime().exec(command);
+                System.exit(0);
+            } else {
+                File f = new File(System.getProperty("java.class.path"));
+                File dir = f.getAbsoluteFile().getParentFile();
+                String path = dir.toString();
+                Runtime.getRuntime().exec("java -jar " + path + "/IconGeneratorBeta081.jar");
+                System.exit(0);
+            }
         } catch (IOException ex) {
             Logger.getLogger(ViewController.class.getName()).log(Level.SEVERE, null, ex);
         }
