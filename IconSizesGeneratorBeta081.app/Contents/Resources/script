@@ -1,4 +1,0 @@
-#!/bin/sh
-
-BASEDIR=$(pwd)
-java -jar "$BASEDIR/IconGeneratorBeta081.jar"
