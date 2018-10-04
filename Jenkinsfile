@@ -1,13 +1,9 @@
-pipeline {
-    agent {
-        docker {
-            image 'ubuntu:18.04'
-        }
-    }
+ppipeline {
+    agent { docker { image 'maven:3.3.3' } }
     stages {
-        stage('Build') { 
+        stage('build') {
             steps {
-                sh 'echo HelloWorld' 
+                sh 'mvn --version'
             }
         }
     }
