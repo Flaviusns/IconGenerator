@@ -17,10 +17,8 @@
 package UIPackage;
 
 import java.awt.SplashScreen;
-import java.awt.Toolkit;
 import javafx.scene.paint.Color;
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -80,24 +78,6 @@ public class IconSizes extends Application {
     private  void splashInit()
     {
         mySplash = SplashScreen.getSplashScreen();
-        if (mySplash != null)
-        {   // if there are any problems displaying the splash this will be null
-//            Dimension ssDim = mySplash.getSize();
-//            int height = ssDim.height;
-//            int width = ssDim.width;
-//            // stake out some area for our status information
-//            splashTextArea = new Rectangle2D.Double(15., height*0.88, width * .45, 32.);
-//            splashProgressArea = new Rectangle2D.Double(width * .55, height*.92, width*.4, 12 );
-//
-//            // create the Graphics environment for drawing status info
-//            splashGraphics = mySplash.createGraphics();
-//            font = new Font("Dialog", Font.PLAIN, 14);
-//            splashGraphics.setFont(font);
-//            
-//            // initialize the status info
-//            splashText("Starting");
-//            splashProgress(0);
-        }
     }
 
 }
