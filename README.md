@@ -6,13 +6,19 @@ The input image  it´s recomendable to be a .png and a 1024x1024 originial size 
 
 We are not responsible for possible problems in your system, you accept the program as it is.
 
-Java it´s required, javafx it´s requiered too. Installers no more supported. Now we use the app itself, like an .app for macOS and a .exe for windows (available soon). For linux based system you can use java -jar in terminal to execute the jar file. The jar file is always available.
+Java it´s required.
 
-**Beta Phase 0.8.1**
+Javafx it´s requiered too.
+
+Installers no more supported.
+ 
+Now we use the app itself, like an .app for macOS and a .exe for windows (available soon). For linux based system you can use java -jar in terminal to execute the jar file. The jar file is always available.
+
+## Beta Phase 0.8.1
 
 Solving a bug that not allow to use "New Image" button in Windows platforms.
 
-**Beta Phase 0.8.0**
+## Beta Phase 0.8.0
 
 New features:
 
