@@ -34,10 +34,10 @@ public class Generator implements Runnable {
     private Method met;
     private Image image = null;
     private String method, name;
-    private ImageRescaling res;
-    private Creator creator;
+    private final ImageRescaling res;
+    private final Creator creator;
     private BufferedImage buf = null;
-    private Path path;
+    private final Path path;
 
     /**
      * Contructor
@@ -70,9 +70,9 @@ public class Generator implements Runnable {
                     n = name.substring(0, name.lastIndexOf("."));
                     name = n + method;
                     creator.saveImage(buf, name, method);
-                    System.out.println("He guardado la imagen"+name);
+                    System.out.println("Image saved: "+name);
                 } else {
-                    System.out.println("Debo acabar");
+                    System.out.println("All images done, I must finish");
                     creator.finished();
                 }
             }

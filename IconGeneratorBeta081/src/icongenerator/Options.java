@@ -112,10 +112,10 @@ public final class Options implements Serializable {
 
     public void toStringData() {
         System.out.println("---------------");
-        System.out.println("Estado de Watch" + iOSwatch);
-        System.out.println("Estado de iMessage" + iMessage);
-        System.out.println("Estado de Historial" + maxHistorySaves);
-        System.out.println("Estado de tipo de exportacion" + preferResizing);
+        System.out.println("Watch State" + iOSwatch);
+        System.out.println("iMessage State" + iMessage);
+        System.out.println("History State" + maxHistorySaves);
+        System.out.println("Export History" + preferResizing);
         System.out.println("**************");
     }
     public void saveData() {
