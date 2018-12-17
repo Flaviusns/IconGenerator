@@ -332,7 +332,7 @@ public class ViewController implements Initializable {
                 File dir = f.getAbsoluteFile().getParentFile();
                 String path = dir.toString();
                 System.out.println(path);
-                String command = "java -jar " + path + "/IconGeneratorBeta081.jar";
+                String command = "java -jar " + "/Users/flaviusstan/Developer/IconGenerator/IconGenerator/IconGeneratorBeta081/dist/IconGeneratorBeta081.jar";
                 command = command.replace("/", "\\");
                 System.out.println(command);
                 Runtime.getRuntime().exec(command);
@@ -341,7 +341,7 @@ public class ViewController implements Initializable {
                 File f = new File(System.getProperty("java.class.path"));
                 File dir = f.getAbsoluteFile().getParentFile();
                 String path = dir.toString();
-                Runtime.getRuntime().exec("java -jar " + path + "/IconGeneratorBeta081.jar");
+                Runtime.getRuntime().exec( "java -jar " + "/Users/flaviusstan/Developer/IconGenerator/IconGenerator/IconGeneratorBeta081/dist/IconGeneratorBeta081.jar");
                 System.exit(0);
             }
         } catch (IOException ex) {
@@ -577,14 +577,4 @@ public class ViewController implements Initializable {
         KeyFrame keyFrame = new KeyFrame(duration, onFinished, keyValueX, keyValueY);
         timeline.getKeyFrames().add(keyFrame);
     }
-    /**
-     * newImage.setOnAction(new EventHandler<ActionEvent>() { public void
-     * handle(ActionEvent event) { Parent root; try { root =
-     * FXMLLoader.load(getClass().getClassLoader().getResource("path/to/other/view.fxml"),
-     * resources); Stage stage = new Stage(); stage.setTitle("My New Stage
-     * Title"); stage.setScene(new Scene(root, 450, 450)); stage.show(); // Hide
-     * this current window (if this is what you want)
-     * ((Node)(event.getSource())).getScene().getWindow().hide(); } catch
-     * (IOException e) { e.printStackTrace(); } } *
-     */
 }
