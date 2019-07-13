@@ -54,6 +54,5 @@
          </font>
       </Label>
       <Button id="closeButton" fx:id="minimizeButton" layoutX="53.0" layoutY="4.0" mnemonicParsing="false" onAction="#handleMinimizeButtonAction" onMouseExited="#setOnMouseEnteredMinimized" onMouseMoved="#setOnMouseEnteredMinimized" onMousePressed="#setOnMousePressedMinimized" onMouseReleased="#setOnMouseReleasedMinimized" styleClass="mainFxmlClass" />
-      <Button id="newImageButton" fx:id="newImage" layoutX="711.0" layoutY="465.0" mnemonicParsing="false" onAction="#newImageClicked" onMouseEntered="#setMouseEntedernewImage" onMouseExited="#setOnMouseExitednewImage" onMousePressed="#setOnMousePressednewImage" onMouseReleased="#setOnMousenewImageReleased" styleClass="newImageButton" />
    </children>
 </AnchorPane>

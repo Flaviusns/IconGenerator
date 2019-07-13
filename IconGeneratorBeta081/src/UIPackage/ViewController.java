@@ -16,7 +16,7 @@
  */
 package UIPackage;
 
-import com.sun.javafx.PlatformUtil;
+
 import icongenerator.Creator;
 import icongenerator.ImageContainer;
 import icongenerator.ImageRescaling;
@@ -67,7 +67,7 @@ import javax.imageio.ImageIO;
 public class ViewController implements Initializable {
 
     @FXML
-    private Button export, closeButton, minimizeButton, newImage;
+    private Button export, closeButton, minimizeButton;
     @FXML
     private AnchorPane myPane;
     @FXML
@@ -202,11 +202,6 @@ public class ViewController implements Initializable {
     }
 
     @FXML
-    public void handlenewImageButtonCliked(ActionEvent event) {
-
-    }
-
-    @FXML
     public void handleMouseDraggedOnPane(MouseEvent mE) {
         myPane.getScene().getWindow().setX(mE.getScreenX() - xOffset);
         myPane.getScene().getWindow().setY(mE.getScreenY() - yOffset);
@@ -324,62 +319,11 @@ public class ViewController implements Initializable {
 
     }
 
-    @FXML
-    private void newImageClicked(ActionEvent mo) {
-        try {
-            if (PlatformUtil.isWindows()) {
-                File f = new File(System.getProperty("java.class.path"));
-                File dir = f.getAbsoluteFile().getParentFile();
-                String path = dir.toString();
-                System.out.println(path);
-                String command = "java -jar " + "/Users/flaviusstan/Developer/IconGenerator/IconGenerator/IconGeneratorBeta081/dist/IconGeneratorBeta081.jar";
-                command = command.replace("/", "\\");
-                System.out.println(command);
-                Runtime.getRuntime().exec(command);
-                System.exit(0);
-            } else {
-                File f = new File(System.getProperty("java.class.path"));
-                File dir = f.getAbsoluteFile().getParentFile();
-                String path = dir.toString();
-                Runtime.getRuntime().exec( "java -jar " + "/Users/flaviusstan/Developer/IconGenerator/IconGenerator/IconGeneratorBeta081/dist/IconGeneratorBeta081.jar");
-                System.exit(0);
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(ViewController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-
-    @FXML
-    private void setOnMousenewImageReleased(MouseEvent mo) {
-        Image img = new Image(getClass().getResourceAsStream("Icons/NewImageButton.png"));
-        newImage.setGraphic(new ImageView(img));
-    }
-
-    @FXML
-    private void setOnMousePressednewImage(MouseEvent mo) {
-        DropShadow dropShadow = new DropShadow();
-        dropShadow.setRadius(7.0);
-        dropShadow.setOffsetX(0.0);
-        dropShadow.setOffsetY(0.0);
-        dropShadow.setColor(Color.BLACK);
-        newImage.setEffect(dropShadow);
-        Image img = new Image(getClass().getResourceAsStream("Icons/NewImageButtonPressed.png"));
-        newImage.setGraphic(new ImageView(img));
-    }
+   
     
-    @FXML
-    private void setMouseEntedernewImage(MouseEvent mo){
-        DropShadow dropShadow = new DropShadow();
-        dropShadow.setRadius(7.0);
-        dropShadow.setOffsetX(0.0);
-        dropShadow.setOffsetY(0.0);
-        dropShadow.setColor(Color.WHITE);
-        newImage.setEffect(dropShadow);
-    }
-    @FXML
-    private void setOnMouseExitednewImage(MouseEvent mo) {
-        newImage.setEffect(null);
-    }
+    
+
+ 
     private void getColor(File f) {
         try {
             int c, blue, red, green;
@@ -433,7 +377,6 @@ public class ViewController implements Initializable {
         setCloseButton();
         setExportButton();
         setMinimizeButton();
-        setNewImageButton();
         setScrollPaneHbarPrefferences();
         setTilePanePropeties();
         setAnimationPropeties();
@@ -510,7 +453,6 @@ public class ViewController implements Initializable {
         export.setDisable(false);
         circle.setVisible(false);
         toBeExported = true;
-        newImage.setVisible(true);
     }
 
     private Image setImageViewPropeties(BufferedImage im) {
@@ -537,12 +479,6 @@ public class ViewController implements Initializable {
     private void setGenerateButton() {
         Image img = new Image(getClass().getResourceAsStream("Icons/GenerateButton.png"));
         export.setGraphic(new ImageView(img));
-    }
-
-    private void setNewImageButton() {
-        Image img = new Image(getClass().getResourceAsStream("Icons/NewImageButton.png"));
-        newImage.setGraphic(new ImageView(img));
-        newImage.setVisible(false);
     }
 
     private void setScrollPaneHbarPrefferences() {

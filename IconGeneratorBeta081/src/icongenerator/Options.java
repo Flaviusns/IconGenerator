@@ -44,7 +44,6 @@ public final class Options implements Serializable {
 
     public Options() {
         if (loadData()) {
-            System.out.println("Todo correcto");
             iOSwatch=booleanSaves[0];
             iMessage=booleanSaves[1];
             automaticGeneration=booleanSaves[2];

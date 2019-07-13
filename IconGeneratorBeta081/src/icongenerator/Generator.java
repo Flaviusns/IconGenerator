@@ -72,7 +72,6 @@ public class Generator implements Runnable {
                     creator.saveImage(buf, name, method);
                     System.out.println("Image saved: "+name);
                 } else {
-                    System.out.println("All images done, I must finish");
                     creator.finished();
                 }
             }

@@ -273,7 +273,6 @@ public class Creator {
             n = name.substring(0, name.lastIndexOf("."));
             n = n + "iOS";
             File f = new File(path1 + "//" + n);
-            System.out.println(path1.toString());
             if (!f.exists()) {
                 pathiOs = Files.createDirectory(Paths.get(path1.toString() + "//" + n));
             } else {
